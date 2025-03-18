@@ -44,7 +44,7 @@ fun BMIResultScreen(){
             .background(
                 brush = Brush.linearGradient(
                     listOf(
-                        Color(color = 0xFFC53131),
+                        Color(color = 0xFF08948c),
                         Color(color = 0xFF640F0A)
                     )
                 )
@@ -144,7 +144,7 @@ fun BMIResultScreen(){
                                     fontSize = 20.sp
                                 )
                                 Text(
-                                    text = stringResource(R.string.age),
+                                    text = stringResource(R.string.age_value),
                                     color = Color.Black,
                                     fontWeight = FontWeight.Bold,
                                     fontSize = 20.sp
@@ -163,7 +163,7 @@ fun BMIResultScreen(){
                                     fontSize = 20.sp
                                 )
                                 Text(
-                                    text = stringResource(R.string.weight),
+                                    text = stringResource(R.string.weight_value),
                                     color = Color.Black,
                                     fontWeight = FontWeight.Bold,
                                     fontSize = 20.sp
@@ -176,13 +176,13 @@ fun BMIResultScreen(){
                                 horizontalAlignment = Alignment.CenterHorizontally
                             ) {
                                 Text(
-                                    text = stringResource(R.string.high),
+                                    text = stringResource(R.string.height),
                                     color = Color.Gray,
                                     fontWeight = FontWeight.Bold,
                                     fontSize = 20.sp
                                 )
                                 Text(
-                                    text = stringResource(R.string.high_value),
+                                    text = stringResource(R.string.height_value),
                                     color = Color.Black,
                                     fontWeight = FontWeight.Bold,
                                     fontSize = 20.sp
@@ -194,7 +194,7 @@ fun BMIResultScreen(){
                         modifier = Modifier
                             .fillMaxWidth()
                             .height(300.dp)
-                            .background(Color.Yellow)
+                            .background(Color.LightGray)
                     ){
 
                     }
@@ -205,7 +205,7 @@ fun BMIResultScreen(){
                             .padding(horizontal = 16.dp)
                             .height(50.dp),
                         colors = ButtonDefaults.buttonColors(
-                            containerColor = Color(color = 0xFFEF9106)
+                            containerColor = Color(color = 0xFF08948c)
                         )
                     ) {
                         Text(
@@ -225,5 +225,7 @@ fun BMIResultScreen(){
 @Preview(showSystemUi = true)
 @Composable
 private fun BMIResultScreenPreview() {
-    BMIResultScreenTheme()
+    BMIResultScreenTheme {
+        BMIResultScreen()
+    }
 }
