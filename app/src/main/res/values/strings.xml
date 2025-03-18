@@ -1,0 +1,10 @@
+    <resources>
+<string name="your_result">Your BMI Result</string>
+<string name="bmi_value">30,6</string>
+<string name="class_bmi">You have Class I Obesity</string>
+<string name="age">50</string>
+<string name="weight">97 Kg</string>
+<string name="high">High</string>
+<string name="high_value">178 cm</string>
+<string name="new_calculate">New Calc</string>
+    </resources>
